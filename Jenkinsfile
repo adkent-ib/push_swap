@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependencies')
         {
             steps {
-                sh "echo Hello && chmod +x Makefile && export TERM=xterm; make fclean"
+                sh "echo Hello && chmod +x Makefile && export TERM=xterm; make clean && fclean"
             }
         }
     }
