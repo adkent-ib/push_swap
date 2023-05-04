@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependencies')
         {
             steps {
-                sh "make all"
+                sh "./Makefile all"
             }
         }
     }
