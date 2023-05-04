@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependencies')
         {
             steps {
-                sh 'apt install make'
+                sh 'make all'
             }
         }
     }
