@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependencies')
         {
             steps {
-                sh "export TERM=xterm; make all"
+                sh "export TERM=xterm; ./Makefile all"
             }
         }
     }
