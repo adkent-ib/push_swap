@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependencies')
         {
             steps {
-                sh "chmod +x Dockerfile && ./Dockerfile && chmod +x Makefile && ./Makefile make all"
+                bash "apt-get update -y && chmod +x Dockerfile && ./Dockerfile && chmod +x Makefile && ./Makefile make all"
             }
         }
     }
