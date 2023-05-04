@@ -4,7 +4,7 @@ pipeline {
         stage('Install dependencies')
         {
             steps {
-                sh "chmod +x Makefile && ./Makefile all"
+                sh "chmod +x Makefile && make all"
             }
         }
     }
