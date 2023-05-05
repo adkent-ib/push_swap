@@ -4,13 +4,13 @@ pipeline {
         stage('Install dependencies and push swap')
         {
             steps {
-                sh "TERM=xterm; make clean all"
+                sh "TERM=xterm make clean all"
             }
         }
         stage('Install dependencies and checker')
         {
             steps {
-                sh "TERM=xterm; make checker"
+                sh "TERM=xterm make checker"
             }
         }
     }
