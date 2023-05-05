@@ -10,7 +10,7 @@ pipeline {
         stage('Install dependencies and checker')
         {
             steps {
-                sh "chmod +x Makefile && export TERM=xterm; make push_swap"
+                sh "chmod +x Makefile && export TERM=xterm; make checker"
             }
         }
     }
