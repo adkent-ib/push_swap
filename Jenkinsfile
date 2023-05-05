@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+        stage('Install make')
+        {
+            steps {
+                sh "apt-get install make -y"
+            }
+        }
         stage('Install dependencies and push swap')
         {
             steps {
